@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./style.css";
-const card = [
+const users = [
   {
     id: 1,
     firstName: "Marian",
@@ -94,31 +94,31 @@ const card = [
   },
 ];
 
-const Card = () => {
-  return (
-    <div className="card-container">
-      <div>
-        <h2 className="firstname">John</h2>
-        <h2 className="lastname">Doe</h2>
-        <p className="">Designer</p>
-      </div>
-      <div>
-        <p className=""></p>
-        <p className=""></p>
-        <p className=""></p>
-      </div>
-
-      <p className=""></p>
-      <img />
+return (
+  <div className="card-container">
+    <div>
+      <h2 className="firstname">cards[0].firstName</h2>
+      <h2 className="lastname"></h2>
+      <p className="position"></p>
     </div>
-  );
-};
+    <div>
+      <p className="phone-number"></p>
+      <p className="email"></p>
+      <p className="address"></p>
+    </div>
+    <div>
+      <img />
+      <p className="company-name"></p>
+    </div>
+  </div>
+);
 
 export default function Home() {
+  const user = users.map((user) => <li key={user.id}></li>);
   return (
     <div>
       <Card />
-      <div>{card.firstName}</div>
+      <div>{cards.firstName}</div>
     </div>
   );
 }
