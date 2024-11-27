@@ -6,6 +6,7 @@ const Card = () => {
   return (
     <div>
       <h3 className="card">Card title</h3>
+      <img />
     </div>
   );
 };
@@ -104,7 +105,8 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <div className="card-container">
+      <Card />
       <Card />
     </div>
   );
