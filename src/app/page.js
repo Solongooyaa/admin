@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
+import "./style.css";
+
 const Card = () => {
   return (
     <div>
-      <h3>Card title</h3>
+      <h3 className="card">Card title</h3>
     </div>
   );
 };
