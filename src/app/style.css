@@ -1,6 +1,10 @@
 .card-container {
   width: 336px;
   height: 216px;
+  color: #ffffff;
   border: 1px solid black;
   border-radius: 10px;
+}
+.name {
+  display: flex;
 }

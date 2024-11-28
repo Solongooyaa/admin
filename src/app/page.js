@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./style.css";
+
 const users = [
   {
     id: 1,
@@ -94,31 +95,33 @@ const users = [
   },
 ];
 
-return (
-  <div className="card-container">
-    <div>
-      <h2 className="firstname">cards[0].firstName</h2>
-      <h2 className="lastname"></h2>
-      <p className="position"></p>
-    </div>
-    <div>
-      <p className="phone-number"></p>
-      <p className="email"></p>
-      <p className="address"></p>
-    </div>
-    <div>
-      <img />
-      <p className="company-name"></p>
-    </div>
-  </div>
-);
-
 export default function Home() {
-  const user = users.map((user) => <li key={user.id}></li>);
-  return (
-    <div>
-      <Card />
-      <div>{cards.firstName}</div>
+  const userCards = users.map((user) => (
+    <div className="card-container">
+      <div className="head">
+        <div className="name">
+          <h2 className="firstname">{user.firstName}</h2>
+          <h2 className="lastname">{user.lastName}</h2>
+        </div>
+
+        <div className="position">{user.position}</div>
+
+        <div>
+          <div className="phone-number">
+            <img src="../phone.png" /> {user.phoneNumber}
+          </div>
+          <div className="email">
+            <img src="../mail.png" />
+            {user.email}
+          </div>
+          <div className="address">{user.address}</div>
+        </div>
+      </div>
+      <div>
+        <img src="../shape.png" />
+        <div className="company-name">{user.companyName}</div>
+      </div>
     </div>
-  );
+  ));
+  return <div>{userCards}</div>;
 }
