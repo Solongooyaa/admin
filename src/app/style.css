@@ -1,10 +1,118 @@
 .card-container {
-  width: 336px;
+  width: 360px;
   height: 216px;
   color: #ffffff;
   border: 1px solid black;
   border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+.head {
+  width: 170px;
+  height: 216px;
 }
 .name {
+  color: black;
   display: flex;
+  width: 50px;
+  height: 17px;
+  margin-left: 10px;
+}
+.card-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.position {
+  width: 25px;
+  height: 10px;
+  color: black;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.address {
+  color: black;
+  width: 150px;
+  height: 130px;
+  margin-top: 35px;
+  padding: 10px;
+}
+.phone-number {
+  display: flex;
+  width: 170px;
+  height: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.phone {
+  background-image: url(../phone.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 15px;
+}
+.email {
+  display: flex;
+  width: 170px;
+  height: 30px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.mail {
+  background-image: url(../mail.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.location-con {
+  display: flex;
+  width: 170px;
+  height: 20px;
+  font-size: 12px;
+}
+.location {
+  background-image: url(../location.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.company-name-container {
+  width: 163px;
+  height: 216px;
+  position: absolute;
+}
+.shape {
+  background-image: url(../Shape.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 216px;
+  position: absolute;
+  margin-left: 180px;
+  background-size: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.logo {
+  background-image: url(../Logo000\ 1.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 270px;
+  position: absolute;
+}
+.company-name {
+  color: rgb(255, 255, 255);
+  margin-top: 75px;
+  margin-left: 265px;
+  position: absolute;
+  align-items: center;
+}
+.qr {
+  background-image: url(../qr.png);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-top: 130px;
+  margin-left: 270px;
+  position: absolute;
+  z-index: 4;
 }
